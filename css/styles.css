@@ -1,9 +1,21 @@
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration-line: none;
+}
+
+h1, h2, h3, h4, h6, h6, p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 address {
@@ -13,10 +25,35 @@ address {
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: #fff;
+    background-color: #fff; 
 }
 
-.header-logo {
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------header------------------ */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
 font-size: 18px;
@@ -24,10 +61,22 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+margin-right: 76px;
+
 }
 
 .header-logo-accent {
     color: #2e2f42;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 76px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link {
@@ -41,6 +90,12 @@ color: #2e2f42;
 .header-menu-link:hover, .header-menu-link:focus {
     color: #404bbf;
 }
+.address-menu-list {
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+}
+
 
 .address-menu-link {
 font-size: 16px;
@@ -56,6 +111,9 @@ color: #434455;
 .header-link-accent:active {
     color: #404bbf;
 }
+/* -------------------end header------------ */
+
+/* ---------------------main--------------- */
 
 .hero {
     background: #2e2f42;
@@ -68,6 +126,10 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+max-width: 496px;
+margin: 0 auto;
+padding-top: 188px;
+padding-bottom: 48px;
 }
 
 .hero-button {
@@ -78,6 +140,13 @@ letter-spacing: 0.04em;
 color: #fff;
 background: #4d5ae5;
 cursor: pointer;
+display: block;
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+margin: 0 auto;
+padding-bottom: 188px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -85,13 +154,37 @@ cursor: pointer;
  background: #404bbf;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
 
-.priority {
+.priority-list {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.priority-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.priority-titel {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .priority-text {
@@ -113,27 +206,41 @@ letter-spacing: 0.02em;
  letter-spacing: 0.02em;
  text-align: center;
  color: #2e2f42;
+ padding-top: 120px;
+ margin-bottom: 72px;
 }
 
 .workers-list {
- background: #fff;
+    display: flex;
+    gap: 24px;
 }
 
-.workers-list-name {
+.workers-item {
+ background: #fff;
+ width: 264px;
+ height: 380px;
+ margin-bottom: 120px;
+}
+
+.workers-item-name {
     text-transform: capitalize;
     font-weight: 500;
  font-size: 20px;
  line-height: 1.2;
  letter-spacing: 0.02em;
  color: #2e2f42;
+ margin-top: 32px;
+ margin-bottom: 8px;
+ text-align: center;
 }
 
-.workers-list-position {
+.workers-item-position {
     font-weight: 400;
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
  color: #434455;
+ text-align: center;
 }
 
 
@@ -145,10 +252,24 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+padding-top: 120px;
+padding-bottom: 72px;
 }
 
 .posibility-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.posibility-item {
     background: #fff;
+    padding-bottom: 32px;
+}
+
+.posibility-picture {
+  
 }
 
 .posibility-name {
@@ -157,6 +278,9 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-top: 32px;
+margin-bottom: 8px;
+padding-left: 16px;
 }
 
 .posibility-type {
@@ -164,10 +288,15 @@ color: #2e2f42;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-left: 16px;
 }
+
+/* ===============================main============================ */
 
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -190,4 +319,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+margin-top: 16px;
+width: 264px;
 }
