@@ -82,6 +82,10 @@ margin-right: 76px;
     gap: 40px;
 }
 
+.header-menu-item {
+    padding: 24px 0;
+}
+
 .header-menu-link {
     font-weight: 500;
 font-size: 16px;
@@ -183,7 +187,7 @@ margin: 0 auto;
 }
 
 .priority-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .priority-titel {
@@ -332,13 +336,11 @@ padding-left: 16px;
     color: #4d5ae5;
 }
 
-.footer-link {
-    display: inline-block;
-    margin-bottom: 16px;
-}
 
 .footer-logo-accent {
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
