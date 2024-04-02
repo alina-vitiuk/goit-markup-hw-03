@@ -82,16 +82,13 @@ margin-right: 76px;
     gap: 40px;
 }
 
-.header-menu-item {
-    padding: 24px 0;
-}
-
 .header-menu-link {
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding: 24px 0;
 }
 
 .header-menu-link:hover, .header-menu-link:focus {
@@ -295,9 +292,7 @@ margin-bottom: 72px;
     background: #fff;
 }
 
-.posibility-picture {
-  
-}
+
 
 .posibility-name {
     font-weight: 500;
@@ -334,13 +329,13 @@ padding-left: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
 .footer-logo-accent {
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-text {
