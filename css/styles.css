@@ -177,8 +177,7 @@ margin: 0 auto;
 .priority-list {
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
     display: flex;
     gap: 24px;
 }
